@@ -27,6 +27,11 @@ export const dataSlice = createSlice({
     }
 })
 
+async function getArtById(artId) {
+    const apiURL = `https://collectionapi.metmuseum.org/public/collection/v1/objects/${artId}`
+    
+}
+
 export const { setData, clearData, incrementId, decrementId, inputId } = dataSlice.actions
 
 export const fetchData = () => {
